@@ -3,7 +3,8 @@
 
   justify-self: center;
 
-  width: 25rem;
+  width: 100%;
+  max-width: 25rem;
 
   margin: auto;
 
@@ -150,5 +151,17 @@
 @media (min-width: 320px) {
   .content_wrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .content_wrapper {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content_wrapper {
+    max-width: 40rem;
   }
 }
